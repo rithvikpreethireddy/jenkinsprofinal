@@ -1,7 +1,7 @@
 node {
     
     stage('Gitclone') {
-	   git branch: 'main', credentialsId: 'babbly', url: 'https://github.com/rithvikpreethireddy/NAWAZ.git'
+	   git branch: 'main', credentialsId: '4c0f65d5-adb2-4590-ac74-a8d82beb347a', url: 'https://github.com/rithvikpreethireddy/jenkinsprofinal.git'
        
     }
 	stage('java version') {
@@ -18,8 +18,8 @@ node {
     }
 	stage('sonar scan') {
 	      sh 'mvn sonar:sonar \
-             -Dsonar.host.url=http://18.141.4.150:9000 \
-             -Dsonar.login=a8d22f9523f7672f7345d8178c9e88dc247607c7'
+               -Dsonar.host.url=http://13.212.161.35:9000 \
+               -Dsonar.login=e96de5a7e7675eed5c8f96d8a4645803b8ee2c02'
   }
 	stage('maven compile') {
 	       
