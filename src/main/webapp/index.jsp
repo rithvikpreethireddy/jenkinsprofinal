@@ -7,7 +7,8 @@
 
 <body bgcolor="#05958C">
 <center>
-<h2> <font color="#2A0595"> Welcome TO  DevOps Training  </font> </h2>
+<h2> <font color="#2A0595"> Welcome TO  DevOps Training  </font>
+<font color="#2A0345"> sucessfully deploy the war package  </font> </h2>
 </center>	
 </body>
 </html>
