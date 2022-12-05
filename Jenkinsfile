@@ -18,8 +18,8 @@ node {
     }
 	stage('sonar scan') {
 	      sh 'mvn sonar:sonar \
-               -Dsonar.host.url=http://13.212.161.35:9000 \
-               -Dsonar.login=e96de5a7e7675eed5c8f96d8a4645803b8ee2c02'
+              -Dsonar.host.url=http://18.142.104.213:9000 \
+              -Dsonar.login=a872146015635d0e3b67a3171a0435cfc5e16d31'
   }
 	stage('maven compile') {
 	       
