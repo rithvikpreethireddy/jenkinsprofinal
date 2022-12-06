@@ -1,8 +1,8 @@
 node {
     
     stage('Gitclone') {
-	   git branch: 'main', credentialsId: '4c0f65d5-adb2-4590-ac74-a8d82beb347a', url: 'https://github.com/rithvikpreethireddy/jenkinsprofinal.git'
-       
+	   
+       git branch: 'main', credentialsId: '17b7a009-121f-4c99-992a-7072f18e7018', url: 'https://github.com/rithvikpreethireddy/jenkinsprofinal.git'
     }
 	stage('java version') {
 	      
@@ -18,8 +18,8 @@ node {
     }
 	stage('sonar scan') {
 	      sh 'mvn sonar:sonar \
-              -Dsonar.host.url=http://18.142.104.213:9000 \
-              -Dsonar.login=a872146015635d0e3b67a3171a0435cfc5e16d31'
+             -Dsonar.host.url=http://18.140.98.57:9000 \
+             -Dsonar.login=bac118450611c8d249690e0255cdc9271fd6e5d4'
   }
 	stage('maven compile') {
 	       
